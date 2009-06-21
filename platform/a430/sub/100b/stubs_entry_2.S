@@ -14,19 +14,19 @@ NHSTUB(TurnOffMic, 0xFFC1E40C) //ok
 NHSTUB(TurnOnMic, 0xFFC1E74C) //ok
 
 
-NHSTUB(ExpCtrlTool_StopContiAE,  0xFFD0DCE0) 
-NHSTUB(ExpCtrlTool_StartContiAE, 0xFFD0DCB0) 
-NHSTUB(MakeAFScan,               0xFFE7003C) 
-NHSTUB(GetBatteryTemperature, 0xFFDC7D94)
-NHSTUB(GetCCDTemperature, 0xFFDC7D80)
-NHSTUB(GetOpticalTemperature, 0xFFDC7D6C)
-NHSTUB(PT_PlaySound, 0xFFE7AA08)
+NHSTUB(ExpCtrlTool_StopContiAE,  0xFFCDBB1C) //ok
+NHSTUB(ExpCtrlTool_StartContiAE, 0xFFCDBAEC) //ok
+NHSTUB(MakeAFScan,               0xFFD2AC58) //ok
+NHSTUB(GetBatteryTemperature, 0xFFC1CCD0) //ok
+NHSTUB(GetCCDTemperature,     0xFFC1CCBC) //ok
+NHSTUB(GetOpticalTemperature, 0xFFC1CCA8) //ok
+NHSTUB(PT_PlaySound, 0xFFD33988) //ok
 
 NHSTUB(EnterToCompensationEVF, 0xffe8b110) // Stub not found. When found, remove dummy function from lib.c.
 NHSTUB(ExitFromCompensationEVF, 0xffe8b194) // Stub not found. When found, remove dummy function from lib.c.
-NHSTUB(SetAE_ShutterSpeed, 0xFFDE17BC)
-NHSTUB(DoAFLock, 0xffe6aedc)
-NHSTUB(UnlockAF, 0xffe6af5c)
+NHSTUB(SetAE_ShutterSpeed, 0xFFE6CB9C) //ok
+NHSTUB(DoAFLock, 0xFFD2647C) //ok
+NHSTUB(UnlockAF, 0xFFD264C0) //ok
 
 NHSTUB(kbd_pwr_on, 0xFFC017E8) //wrong, null stub
 NHSTUB(kbd_pwr_off, 0xFFC017E8) //wrong, null stub

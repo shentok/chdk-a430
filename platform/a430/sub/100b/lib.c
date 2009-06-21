@@ -3,22 +3,22 @@
 
 void *hook_raw_fptr()
 {
-    return (void*)0x440C0; 
+    return (void*)0x34EA4; // found in taskcreate_ImageSensorTask
 }
 
 void *hook_raw_ret_addr()
 {
-    return (void*)0xFFD4CBD8; 
+    return (void*)0xFFCB30B0; // ok
 }
 
 char *hook_raw_image_addr()
 {
-    return (char*)(0x10800000+0x41000+0x260);      
+    return (char*)0x10577E28;  // ok
 }
 
 long hook_raw_size()
 {
-    return 0x63FF60;       // "CRAW BUF","WBIntegPrm.c" -  1/3" 5 MPix -  (2664*1968*10/8=0x63FF60)  
+    return 0x49D7C0;       // ?? "CRAW BUF","WBIntegPrm.c" -  1/3" 4 MPix -  (2272*1704*10/8=0x49D7C0)
 }
 
 void *vid_get_viewport_live_fb()
