@@ -3,7 +3,7 @@
 DEF(physw_status, 0xFC38) //ok
 DEF(physw_run,  0x1FAC) //ok
 DEF(zoom_busy, 0x7CFD0) //ok
-DEF(focus_busy, 0x7D2E8) //??
+DEF(focus_busy, 0x7D2E8) //ok
 DEF(FlashParamsTable,0xFFEADA74)
 DEF(canon_menu_active,0x8090) //ok
 DEF(canon_ev_corr_menu_active, 0xD5D8)

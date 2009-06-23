@@ -22,8 +22,8 @@ NHSTUB(GetCCDTemperature,     0xFFC1CCBC) //ok
 NHSTUB(GetOpticalTemperature, 0xFFC1CCA8) //ok
 NHSTUB(PT_PlaySound, 0xFFD33988) //ok
 
-NHSTUB(EnterToCompensationEVF, 0xffe8b110) // Stub not found. When found, remove dummy function from lib.c.
-NHSTUB(ExitFromCompensationEVF, 0xffe8b194) // Stub not found. When found, remove dummy function from lib.c.
+NHSTUB(EnterToCompensationEVF, 0xFFD28268) //found by zfeet
+NHSTUB(ExitFromCompensationEVF, 0xFFD282C4) //found by zfeet
 NHSTUB(SetAE_ShutterSpeed, 0xFFE6CB9C) //ok
 NHSTUB(DoAFLock, 0xFFD2647C) //ok
 NHSTUB(UnlockAF, 0xFFD264C0) //ok
