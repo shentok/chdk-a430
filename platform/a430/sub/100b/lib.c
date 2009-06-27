@@ -16,9 +16,20 @@ char *hook_raw_image_addr()
     return (char*)0x10577E28;  // ok
 }
 
+#ifndef CAM_RAW_ROWPIX
+#error CAM_RAW_ROWPIX must be defined
+#endif
+#ifndef CAM_RAW_ROWS
+#error CAM_RAW_ROWS must be defined
+#endif
+#ifndef CAM_SENSOR_BITS_PER_PIXEL
+#error CAM_SENSOR_BITS_PER_PIXEL must be defined
+#endif
+
 long hook_raw_size()
 {
-    return 0x49D7C0;       // ?? "CRAW BUF","WBIntegPrm.c" -  1/3" 4 MPix -  (2272*1704*10/8=0x49D7C0)
+    static const long size = CAM_RAW_ROWPIX*CAM_RAW_ROWS*CAM_SENSOR_BITS_PER_PIXEL/8;
+    return size;
 }
 
 void *vid_get_viewport_live_fb()

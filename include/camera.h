@@ -127,8 +127,8 @@
 #elif defined (CAMERA_a430)
     #define CAM_PROPSET                 2
 
-    #define CAM_RAW_ROWPIX              2272   // for 4 MP 1/3" sensor size
-    #define CAM_RAW_ROWS                1704   // for 4 MP 1/3" sensor size
+    #define CAM_RAW_ROWPIX              2392   // for 4 MP 1/3" sensor size
+    #define CAM_RAW_ROWS                1752   // for 4 MP 1/3" sensor size
 
     #undef  CAM_USE_ZOOM_FOR_MF
     #undef  CAM_HAS_ZOOM_LEVER
